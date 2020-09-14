@@ -7,35 +7,6 @@
 * [Brute Force - CheatSheet](brute-force.md)
 * [Search Exploits](search-exploits.md)
 
-## Shells
-
-* [Shells \(Linux, Windows, MSFVenom\)](shells/shells/README.md)
-  * [MSFVenom - CheatSheet](shells/shells/untitled.md)
-  * [Shells - Windows](shells/shells/windows.md)
-  * [Shells - Linux](shells/shells/linux.md)
-  * [Full TTYs](shells/shells/full-ttys.md)
-
-## Linux/Unix
-
-* [Checklist - Linux Privilege Escalation](linux-unix/linux-privilege-escalation-checklist.md)
-* [Linux Privilege Escalation](linux-unix/privilege-escalation/README.md)
-  * [Escaping from a Docker container](linux-unix/privilege-escalation/escaping-from-a-docker-container.md)
-  * [Escaping from restricted shells - Jails](linux-unix/privilege-escalation/escaping-from-limited-bash.md)
-  * [Cisco - vmanage](linux-unix/privilege-escalation/cisco-vmanage.md)
-  * [D-Bus Enumeration & Command Injection Privilege Escalation](linux-unix/privilege-escalation/d-bus-enumeration-and-command-injection-privilege-escalation.md)
-  * [Interesting Groups - Linux PE](linux-unix/privilege-escalation/interesting-groups-linux-pe/README.md)
-    * [lxd/lxc Group - Privilege escalation](linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation.md)
-  * [ld.so exploit example](linux-unix/privilege-escalation/ld.so.conf-example.md)
-  * [Linux Capabilities](linux-unix/privilege-escalation/linux-capabilities.md)
-  * [NFS no\_root\_squash/no\_all\_squash misconfiguration PE](linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe.md)
-  * [SSH Forward Agent exploitation](linux-unix/privilege-escalation/ssh-forward-agent-exploitation.md)
-  * [Socket Command Injection](linux-unix/privilege-escalation/socket-command-injection.md)
-  * [Payloads to execute](linux-unix/privilege-escalation/payloads-to-execute.md)
-  * [Wildcards Spare tricks](linux-unix/privilege-escalation/wildcards-spare-tricks.md)
-* [Useful Linux Commands](linux-unix/useful-linux-commands/README.md)
-  * [Bypass Bash Restrictions](linux-unix/useful-linux-commands/bypass-bash-restrictions.md)
-* [Linux Environment Variables](linux-unix/linux-environment-variables.md)
-
 ## Windows
 
 * [Checklist - Local Windows Privilege Escalation](windows/checklist-windows-privilege-escalation.md)
@@ -99,30 +70,26 @@
   * [PowerView](windows/basic-powershell-for-pentesters/powerview.md)
 * [AV Bypass](windows/av-bypass.md)
 
-## Mobile Apps Pentesting
+## Linux/Unix
 
-* [Android APK Checklist](mobile-apps-pentesting/android-checklist.md)
-* [Android Applications Pentesting](mobile-apps-pentesting/android-app-pentesting/README.md)
-  * [ADB Commands](mobile-apps-pentesting/android-app-pentesting/adb-commands.md)
-  * [APK decompilers](mobile-apps-pentesting/android-app-pentesting/apk-decompilers.md)
-  * [AVD - Android Virtual Device](mobile-apps-pentesting/android-app-pentesting/avd-android-virtual-device.md)
-  * [Burp Suite Configuration for Android](mobile-apps-pentesting/android-app-pentesting/android-burp-suite-settings.md)
-  * [Drozer Tutorial](mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/README.md)
-    * [Exploiting Content Providers](mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/exploiting-content-providers.md)
-  * [Exploiting a debuggeable applciation](mobile-apps-pentesting/android-app-pentesting/exploiting-a-debuggeable-applciation.md)
-  * [Frida Tutorial](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/README.md)
-    * [Frida Tutorial 1](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-1.md)
-    * [Frida Tutorial 2](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-2.md)
-    * [Frida Tutorial 3](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/owaspuncrackable-1.md)
-    * [Objection Tutorial](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/objection-tutorial.md)
-  * [Google CTF 2018 - Shall We Play a Game?](mobile-apps-pentesting/android-app-pentesting/google-ctf-2018-shall-we-play-a-game.md)
-  * [Make APK Accept CA Certificate](mobile-apps-pentesting/android-app-pentesting/make-apk-accept-ca-certificate.md)
-  * [Manual DeObfuscation](mobile-apps-pentesting/android-app-pentesting/manual-deobfuscation.md)
-  * [Reversing Native Libraries](mobile-apps-pentesting/android-app-pentesting/reversing-native-libraries.md)
-  * [Smali - Decompiling/\[Modifying\]/Compiling](mobile-apps-pentesting/android-app-pentesting/smali-changes.md)
-  * [Spoofing your location in Play Store](mobile-apps-pentesting/android-app-pentesting/spoofing-your-location-in-play-store.md)
-  * [Webview Attacks](mobile-apps-pentesting/android-app-pentesting/webview-attacks.md)
-  * [What are Intents](mobile-apps-pentesting/android-app-pentesting/what-are-intents.md)
+* [Checklist - Linux Privilege Escalation](linux-unix/linux-privilege-escalation-checklist.md)
+* [Linux Privilege Escalation](linux-unix/privilege-escalation/README.md)
+  * [Escaping from a Docker container](linux-unix/privilege-escalation/escaping-from-a-docker-container.md)
+  * [Escaping from restricted shells - Jails](linux-unix/privilege-escalation/escaping-from-limited-bash.md)
+  * [Cisco - vmanage](linux-unix/privilege-escalation/cisco-vmanage.md)
+  * [D-Bus Enumeration & Command Injection Privilege Escalation](linux-unix/privilege-escalation/d-bus-enumeration-and-command-injection-privilege-escalation.md)
+  * [Interesting Groups - Linux PE](linux-unix/privilege-escalation/interesting-groups-linux-pe/README.md)
+    * [lxd/lxc Group - Privilege escalation](linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation.md)
+  * [ld.so exploit example](linux-unix/privilege-escalation/ld.so.conf-example.md)
+  * [Linux Capabilities](linux-unix/privilege-escalation/linux-capabilities.md)
+  * [NFS no\_root\_squash/no\_all\_squash misconfiguration PE](linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe.md)
+  * [SSH Forward Agent exploitation](linux-unix/privilege-escalation/ssh-forward-agent-exploitation.md)
+  * [Socket Command Injection](linux-unix/privilege-escalation/socket-command-injection.md)
+  * [Payloads to execute](linux-unix/privilege-escalation/payloads-to-execute.md)
+  * [Wildcards Spare tricks](linux-unix/privilege-escalation/wildcards-spare-tricks.md)
+* [Useful Linux Commands](linux-unix/useful-linux-commands/README.md)
+  * [Bypass Bash Restrictions](linux-unix/useful-linux-commands/bypass-bash-restrictions.md)
+* [Linux Environment Variables](linux-unix/linux-environment-variables.md)
 
 ## Pentesting
 
@@ -322,6 +289,39 @@
   * [XSS Tools](pentesting-web/xss-cross-site-scripting/xss-tools.md)
 * [XSSI \(Cross-Site Script Inclusion\)](pentesting-web/xssi-cross-site-script-inclusion.md)
 * [XS-Search](pentesting-web/xs-search.md)
+
+## Mobile Apps Pentesting
+
+* [Android APK Checklist](mobile-apps-pentesting/android-checklist.md)
+* [Android Applications Pentesting](mobile-apps-pentesting/android-app-pentesting/README.md)
+  * [ADB Commands](mobile-apps-pentesting/android-app-pentesting/adb-commands.md)
+  * [APK decompilers](mobile-apps-pentesting/android-app-pentesting/apk-decompilers.md)
+  * [AVD - Android Virtual Device](mobile-apps-pentesting/android-app-pentesting/avd-android-virtual-device.md)
+  * [Burp Suite Configuration for Android](mobile-apps-pentesting/android-app-pentesting/android-burp-suite-settings.md)
+  * [Drozer Tutorial](mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/README.md)
+    * [Exploiting Content Providers](mobile-apps-pentesting/android-app-pentesting/drozer-tutorial/exploiting-content-providers.md)
+  * [Exploiting a debuggeable applciation](mobile-apps-pentesting/android-app-pentesting/exploiting-a-debuggeable-applciation.md)
+  * [Frida Tutorial](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/README.md)
+    * [Frida Tutorial 1](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-1.md)
+    * [Frida Tutorial 2](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/frida-tutorial-2.md)
+    * [Frida Tutorial 3](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/owaspuncrackable-1.md)
+    * [Objection Tutorial](mobile-apps-pentesting/android-app-pentesting/frida-tutorial/objection-tutorial.md)
+  * [Google CTF 2018 - Shall We Play a Game?](mobile-apps-pentesting/android-app-pentesting/google-ctf-2018-shall-we-play-a-game.md)
+  * [Make APK Accept CA Certificate](mobile-apps-pentesting/android-app-pentesting/make-apk-accept-ca-certificate.md)
+  * [Manual DeObfuscation](mobile-apps-pentesting/android-app-pentesting/manual-deobfuscation.md)
+  * [Reversing Native Libraries](mobile-apps-pentesting/android-app-pentesting/reversing-native-libraries.md)
+  * [Smali - Decompiling/\[Modifying\]/Compiling](mobile-apps-pentesting/android-app-pentesting/smali-changes.md)
+  * [Spoofing your location in Play Store](mobile-apps-pentesting/android-app-pentesting/spoofing-your-location-in-play-store.md)
+  * [Webview Attacks](mobile-apps-pentesting/android-app-pentesting/webview-attacks.md)
+  * [What are Intents](mobile-apps-pentesting/android-app-pentesting/what-are-intents.md)
+
+## Shells
+
+* [Shells \(Linux, Windows, MSFVenom\)](shells/shells/README.md)
+  * [MSFVenom - CheatSheet](shells/shells/untitled.md)
+  * [Shells - Windows](shells/shells/windows.md)
+  * [Shells - Linux](shells/shells/linux.md)
+  * [Full TTYs](shells/shells/full-ttys.md)
 
 ## Physical attacks
 
