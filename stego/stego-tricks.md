@@ -18,7 +18,7 @@ It can be installed with `apt` however the [source](https://github.com/ReFirmLab
 Foremost is a program that recovers files based on their headers , footers and internal data structures , I find it useful when dealing with png images. You can select the files that foremost extract by changing the config file in **/etc/foremost.conf.**  
 It can be installed with `apt` however the [source](https://github.com/korczis/foremost) can be found on github.  
 **Useful commands:**  
- `foremost -i file` : extracts data from the given file.
+`foremost -i file` : extracts data from the given file.
 
 ### Exiftool <a id="exiftool"></a>
 
@@ -33,7 +33,7 @@ A tool similar to exiftool.
 It can be installed with `apt` however the [source](https://github.com/Exiv2/exiv2) can be found on github.  
 [Official website](http://www.exiv2.org/)  
 **Useful commands:**  
- `exiv2 file` : shows the metadata of the given file
+`exiv2 file` : shows the metadata of the given file
 
 ### File
 
@@ -47,7 +47,7 @@ Useful commands:
 `strings -n 6 file | head -n 20`: Extact first 20 strings with min length of 6  
 `strings -n 6 file | tail -n 20`: Extact last 20 strings with min length of 6  
 `strings -e s -n 6 file`: Extact 7bit strings  
-`strings -e S -n 6 file`: Extact 8bit strings   
+`strings -e S -n 6 file`: Extact 8bit strings  
 `strings -e l -n 6 file`: Extact 16bit strings \(little-endian\)  
 `strings -e b -n 6 file`: Extact 16bit strings \(big-endian\)  
 `strings -e L -n 6 file`: Extact 32bit strings \(little-endian\)  
@@ -64,13 +64,13 @@ To **extract** the **data** you can use: [https://www.irongeek.com/i.php?page=se
 
 ### identify
 
- [GraphicMagick](http://www.graphicsmagick.org/) tool to check what kind of image a file is. Checks also if image is corrupted.  
- `identify -verbose stego.jpg`
+[GraphicMagick](http://www.graphicsmagick.org/) tool to check what kind of image a file is. Checks also if image is corrupted.  
+`identify -verbose stego.jpg`
 
 ### Steghide \[JPEG, BMP, WAV, AU\] <a id="steghide"></a>
 
 Steghide is a steganography program that hides data in various kinds of image and audio files , only supports these file formats : `JPEG, BMP, WAV and AU`. but it’s also useful for extracting embedded and encrypted data from other files.  
- It can be installed with `apt` however the [source](https://github.com/StefanoDeVuono/steghide) can be found on github.  
+It can be installed with `apt` however the [source](https://github.com/StefanoDeVuono/steghide) can be found on github.  
 **Useful commands:**  
 `steghide info file` : displays info about a file whether it has embedded data or not.  
 `steghide extract -sf file [--passphrase password]` : extracts embedded data from a file \[using a password\]
@@ -84,19 +84,19 @@ You can also extract content from steghide using the web: [https://futureboy.us/
 zsteg is a tool that can detect hidden data in png and bmp files.  
 Install it : `gem install zsteg` , The source can be found on [github](https://github.com/zed-0xff/zsteg)  
 **Useful commands:**  
- `zsteg -a file` : Runs all the methods on the given file  
- `zsteg -E file` : Extracts data from the given payload \(example : zsteg -E b4,bgr,msb,xy name.png\)
+`zsteg -a file` : Runs all the methods on the given file  
+`zsteg -E file` : Extracts data from the given payload \(example : zsteg -E b4,bgr,msb,xy name.png\)
 
-### stegoVeritasJPG, PNG, GIF, TIFF, BMP 
+### stegoVeritasJPG, PNG, GIF, TIFF, BMP
 
 A wide variety of simple and advanced checks. Check out `stegoveritas.py -h`. Checks metadata, creates many transformed images and saves them to a directory, Brute forces LSB, ...  
- `stegoveritas.py stego.jpg` to run all checks
+`stegoveritas.py stego.jpg` to run all checks
 
 ### Stegsolve
 
 Sometimes there is a message or a text hidden in the image itself and in order to view it you need to apply some color filters or play with the color levels. You can do it with GIMP or Photoshop or any other image editing software but stegsolve made it easier. it’s a small java tool that applies many color filters on images. Personally i find it very useful  
 You can get it from [github](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve)  
-Just open the image with this tool and clinck on the  `<`  `>` buttons.
+Just open the image with this tool and clinck on the `<` `>` buttons.
 
 ### FFT
 
@@ -131,15 +131,15 @@ Get details on a PNG file \(or find out is is actually something else\).
 ### ffmpeg
 
 ffmpeg can be used to check integrity of audio files and let it report infos and errors.  
- `ffmpeg -v info -i stego.mp3 -f null -`
+`ffmpeg -v info -i stego.mp3 -f null -`
 
 ### Wavsteg \[WAV\] <a id="wavsteg"></a>
 
 WavSteg is a python3 tool that can hide data \(using least significant bit\) in wav files and can also extract data from wav files.  
 You can get it from [github](https://github.com/ragibson/Steganography#WavSteg)  
 Useful commands:  
- `python3 WavSteg.py -r -b 1 -s soundfile -o outputfile` : Extracts to output \(taking only 1 lsb\)  
- `python3 WavSteg.py -r -b 2 -s soundfile -o outputfile` : Extracts to output \(taking only 2 lsb\)
+`python3 WavSteg.py -r -b 1 -s soundfile -o outputfile` : Extracts to output \(taking only 1 lsb\)  
+`python3 WavSteg.py -r -b 2 -s soundfile -o outputfile` : Extracts to output \(taking only 2 lsb\)
 
 ### Deepsound
 
@@ -149,9 +149,9 @@ Run it and open the file and check if DeepSound finds any data hidden, in taht c
 
 ### Sonic visualizer <a id="sonic-visualizer"></a>
 
-Sonic visualizer is a tool for viewing and analyzing the contents of audio files, however it can be helpful when dealing with audio steganography. You can reveal hidden shapes in audio files.   
+Sonic visualizer is a tool for viewing and analyzing the contents of audio files, however it can be helpful when dealing with audio steganography. You can reveal hidden shapes in audio files.  
 You should always check the spectrogram of the audio.  
- [Offical Website](https://www.sonicvisualiser.org/)
+[Offical Website](https://www.sonicvisualiser.org/)
 
 ### DTMF Tones - Dial tones
 
@@ -169,14 +169,10 @@ import math
 math.sqrt(2500) #50
 ```
 
-From "1"s and "0"s to image: [ https://www.dcode.fr/binary-image](%20https://www.dcode.fr/binary-image)  
+From "1"s and "0"s to image: [ https://www.dcode.fr/binary-image](https://github.com/m3ll-0/hacktricks/tree/ce5a16d5e9e6557ea65262d634de8271aea273f2/binary-image/README.md)  
 Read a QR code: [https://online-barcode-reader.inliteresearch.com/](https://online-barcode-reader.inliteresearch.com/)
 
 ### Braile
 
 [https://www.branah.com/braille-translator](https://www.branah.com/braille-translator%29)
-
-
-
-
 

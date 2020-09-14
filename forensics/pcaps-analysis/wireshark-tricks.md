@@ -23,5 +23,3 @@ To import this in wireshark go to _edit&gt;preference&gt;protocol&gt;ssl&gt;_ an
 
 ![](../../.gitbook/assets/image%20%28191%29.png)
 
-
-

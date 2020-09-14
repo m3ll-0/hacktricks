@@ -2,25 +2,25 @@
 
 Some things that could be useful to debug/desofuscate a malicious vbs file:
 
-### echo
+## echo
 
 ```text
 Wscript.Echo "Like this?"
 ```
 
-### Commnets
+## Commnets
 
 ```text
 ' this is a comment
 ```
 
-### Test
+## Test
 
 ```text
 cscript.exe file.vbs
 ```
 
-### Write data to a file
+## Write data to a file
 
 ```text
 Function writeBinary(strBinary, strPath)

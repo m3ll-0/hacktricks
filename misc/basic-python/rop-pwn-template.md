@@ -88,7 +88,7 @@ def get_addr(func_name):
     if libc != "":
         libc.address = leak - libc.symbols[func_name] #Save libc base
         log.info("libc base @ %s" % hex(libc.address))
-    
+
     return hex(leak)
 
 get_addr("puts") #Search for puts address in memmory to obtains libc base

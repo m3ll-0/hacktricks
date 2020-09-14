@@ -1,6 +1,6 @@
 # Esoteric languages
 
-### Malbolge
+## Malbolge
 
 ```text
 ('&%:9]!~}|z2Vxwv-,POqponl$Hjig%eB@@>}=<M:9wv6WsU2T|nm-,jcL(I&%$#"
@@ -9,7 +9,7 @@
 
 [http://malbolge.doleczek.pl/](http://malbolge.doleczek.pl/)
 
-### npiet
+## npiet
 
 ![](../.gitbook/assets/image%20%28179%29.png)
 

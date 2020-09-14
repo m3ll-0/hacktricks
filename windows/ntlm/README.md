@@ -79,14 +79,14 @@ You need to use a **tool** that will **perform** the **NTLM authentication using
 **Needs to be run as administrator**
 
 ```bash
-Invoke-Mimikatz -Command '"sekurlsa::pth /user:username /domain:domain.tld /ntlm:NTLMhash /run:powershell.exe"' 
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:username /domain:domain.tld /ntlm:NTLMhash /run:powershell.exe"'
 ```
 
 This will launch a process that will belongs to the users that have launch mimikatz but internally in LSASS the saved credentials are the ones inside the mimikatz parameters. Then, you can access to network resources as if you where that user \(similar to the `runas /netonly` trick but you don't need to know the plain-text password\).
 
 ### Pass-the-Hash from linux
 
-You can obtain code execution in Windows machines using Pass-the-Hash from Linux.   
+You can obtain code execution in Windows machines using Pass-the-Hash from Linux.  
 [**Access here to learn how to do it.**](../../pentesting/pentesting-smb.md#execute)\*\*\*\*
 
 ### Impacket Windows compiled tools
@@ -167,7 +167,7 @@ Because of how the NTLM authentication behaves, if you could make a **client to 
 
 You can perform this attack using **metasploit module**: `exploit/windows/smb/smb_relay`
 
-The  option `SRVHOST` is used to point the server **were you want to get access**.  
+The option `SRVHOST` is used to point the server **were you want to get access**.  
 Then, when **any host try to authenticate against you**, metasploit will **try to authenticate against the other** server.
 
 You **can't authenticate against the same host that is trying to authenticate against you** \(MS08-068\). **Metasploit** will **always** send a "_**Denied**_" **response** to the **client** that is trying to connect to you.

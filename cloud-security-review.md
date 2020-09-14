@@ -14,7 +14,7 @@ pip3 install scoutsuite
 
 ### [cs-suite](https://github.com/SecurityFTW/cs-suite)
 
-AWS, GCP, Azure, DigitalOcean 
+AWS, GCP, Azure, DigitalOcean
 
 ```text
 git clone https://github.com/SecurityFTW/cs-suite.git && cd cs-suite/
@@ -47,7 +47,7 @@ It is recommended to **install azure-cli** in a **linux** and **windows** virtua
 Then, run `az login` to login. Note the **account information** and **token** will be **saved** inside _&lt;HOME&gt;/.azure_ \(in both Windows and Linux\).
 
 Remember that if the **Security Centre Standard Pricing Tier** is being used and **not** the **free** tier, you can **generate** a **CIS compliance scan report** from the azure portal. Go to _Policy & Compliance-&gt; Regulatory Compliance_ \(or try to access [https://portal.azure.com/\#blade/Microsoft\_Azure\_Security/SecurityMenuBlade/22](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/22)\).  
-__If the company is not paying for a Standard account you may need to review the **CIS Microsoft Azure Foundations Benchmark** by "hand" \(you can get some help using the following tools\). Download it from [**here**](https://www.newnettechnologies.com/cis-benchmark.html?keyword=&gclid=Cj0KCQjwyPbzBRDsARIsAFh15JYSireQtX57C6XF8cfZU3JVjswtaLFJndC3Hv45YraKpLVDgLqEY6IaAhsZEALw_wcB#microsoft-azure).
+\_\_If the company is not paying for a Standard account you may need to review the **CIS Microsoft Azure Foundations Benchmark** by "hand" \(you can get some help using the following tools\). Download it from [**here**](https://www.newnettechnologies.com/cis-benchmark.html?keyword=&gclid=Cj0KCQjwyPbzBRDsARIsAFh15JYSireQtX57C6XF8cfZU3JVjswtaLFJndC3Hv45YraKpLVDgLqEY6IaAhsZEALw_wcB#microsoft-azure).
 
 ### Run scanners
 
@@ -91,14 +91,13 @@ azscan #Run, login before with `az login`
 ![](.gitbook/assets/image%20%2889%29.png)
 
 * **Standard tier** is recommended instead of free tier \(see the tier being used in _Pricing & Settings_ or in [https://portal.azure.com/\#blade/Microsoft\_Azure\_Security/SecurityMenuBlade/24](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/24)\)
-* **Periodic SQL servers scans**:   _Select the SQL server_ --&gt; _Make sure that 'Advanced data security' is set to 'On'_ --&gt; _Under 'Vulnerability assessment settings', set 'Periodic recurring scans' to 'On', and configure a storage account for storing vulnerability assessment scan results_ --&gt; _Click Save_
+* **Periodic SQL servers scans**: 
+
+  _Select the SQL server_ --&gt; _Make sure that 'Advanced data security' is set to 'On'_ --&gt; _Under 'Vulnerability assessment settings', set 'Periodic recurring scans' to 'On', and configure a storage account for storing vulnerability assessment scan results_ --&gt; _Click Save_
+
 * **Lack of App Services restrictions**: Look for "App Services" in Azure \([https://portal.azure.com/\#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites)\) and check if anyone is being used. In that case check go through each App checking for "Access Restrictions" and there aren't rules, report it. The access to the app service should be restricted according to the needs.
 
 ## AWS
 
 Get objets in graph: [https://github.com/FSecureLABS/awspx](https://github.com/FSecureLABS/awspx)
-
-
-
-
 

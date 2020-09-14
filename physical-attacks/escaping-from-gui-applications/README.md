@@ -23,7 +23,7 @@ If you can execute something with commands you can execute binaries like _rundll
 ## Bypassing path restrictions
 
 * **Environment variables**: There are a lot of environment variables that are pointing to some path
-* **UNC paths**: Paths to connect to shared folders. You should try to connect to the C$ of the local machine \("\\127.0.0.1\c$\Windows\System32"\)
+* **UNC paths**: Paths to connect to shared folders. You should try to connect to the C$ of the local machine \("\127.0.0.1\c$\Windows\System32"\)
 * **Other protocols**: _about:, data:, ftp:, file:, mailto:, news:, res:, telnet:, view-source:_
 * **Symbolic links**
 * **Shortcuts**: CTRL+N \(open new session\), CTRL+R \(Execute Commands\), CTRL+SHIFT+ESC \(Task Manager\),  Windows+E \(open explorer\), CTRL-B, CTRL-I \(Favourites\), CTRL-H \(History\), CTRL-L, CTRL-O \(File/Open Dialog\), CTRL-P \(Print Dialog\), CTRL-S \(Save As\)
@@ -47,7 +47,7 @@ Registry editor: [https://sourceforge.net/projects/uberregedit/](https://sourcef
 | C:/windows | C:/windows/ | C:/windows\ | C:\windows |
 | C:\windows\ | C:\windows/ | %WINDIR% | %TMP% |
 | %TEMP% | %SYSTEMDRIVE% | %SYSTEMROOT% | %APPDATA% |
-| %HOMEDRIVE% | %HOMESHARE |  |   |
+| %HOMEDRIVE% | %HOMESHARE |  |  |
 
 ## Abusing Common Dialogs
 
@@ -58,8 +58,7 @@ Registry editor: [https://sourceforge.net/projects/uberregedit/](https://sourcef
 Backup iKat versions:
 
 [http://swin.es/k/](http://swin.es/k/)  
-[http://www.ikat.kronicd.net/](http://www.ikat.kronicd.net/)  
-
+[http://www.ikat.kronicd.net/](http://www.ikat.kronicd.net/)
 
 ## Internet Explorer Tricks
 

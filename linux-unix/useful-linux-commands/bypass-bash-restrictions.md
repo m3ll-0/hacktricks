@@ -30,7 +30,6 @@ w`u`h`u`o`u`a`u`m`u`i #Equals to whoami but 5 errors trying to exeute "u" are sh
 mi #This will throw an error
 whoa #This will throw an error
 !-1!-2 #This will execute whoami
-
 ```
 
 ## Bypass forbidden spaces
@@ -78,11 +77,9 @@ Check more possible bypasses here: [https://github.com/swisskyrepo/PayloadsAllTh
 
 ## References
 
-{% embed url="https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0" %}
+{% embed url="https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0" caption="" %}
 
-{% embed url="https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0" %}
+{% embed url="https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0" caption="" %}
 
-{% embed url="https://www.secjuice.com/web-application-firewall-waf-evasion/" %}
-
-
+{% embed url="https://www.secjuice.com/web-application-firewall-waf-evasion/" caption="" %}
 

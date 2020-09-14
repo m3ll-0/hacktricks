@@ -54,7 +54,7 @@ capsh --print
 
 **CapAmb**: The _ambient_ capability set applies to all non-SUID binaries without file capabilities. It preserves capabilities when calling `execve`. However, not all capabilities in the ambient set may be preserved because they are being dropped in case they are not present in either the inheritable or permitted capability set. This set is preserved across `execve` calls.
 
-For a detailed explanation of the difference between capabilities in threads and files and how are the capabilities  passed to threads read the following pages:
+For a detailed explanation of the difference between capabilities in threads and files and how are the capabilities passed to threads read the following pages:
 
 * [https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work](https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work)
 * [https://blog.ploetzli.ch/2014/understanding-linux-capabilities/](https://blog.ploetzli.ch/2014/understanding-linux-capabilities/)
@@ -97,11 +97,11 @@ Lets check now the **capabilities** used by `ping`:
 
 ```bash
 cat /proc/9491/status | grep Cap
-CapInh:	0000000000000000
-CapPrm:	0000000000003000
-CapEff:	0000000000000000
-CapBnd:	0000003fffffffff
-CapAmb:	0000000000000000
+CapInh:    0000000000000000
+CapPrm:    0000000000003000
+CapEff:    0000000000000000
+CapBnd:    0000003fffffffff
+CapAmb:    0000000000000000
 
 capsh --decode=0000000000003000
 0x0000000000003000=cap_net_admin,cap_net_raw
@@ -123,11 +123,11 @@ $ getpcaps 9562
 Capabilities for `9562': = cap_net_admin,cap_net_raw+ep
 
 $ cat /proc/9562/status | grep Cap
-CapInh:	0000000000000000
-CapPrm:	0000000000003000
-CapEff:	0000000000003000
-CapBnd:	0000003fffffffff
-CapAmb:	0000000000000000
+CapInh:    0000000000000000
+CapPrm:    0000000000003000
+CapEff:    0000000000003000
+CapBnd:    0000003fffffffff
+CapAmb:    0000000000000000
 
 $ capsh --decode=0000000000003000
 0x0000000000003000=cap_net_admin,cap_net_raw

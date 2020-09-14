@@ -111,5 +111,3 @@ y por aqui la metodologia owasp para analizar firmware: [https://github.com/scri
 * [https://github.com/rackerlabs/scantron](https://github.com/rackerlabs/scantron) : automating scanning
 * [https://github.com/doyensec/awesome-electronjs-hacking](https://github.com/doyensec/awesome-electronjs-hacking) : This list aims to cover Electron.js security related topics.
 
-## 
-

