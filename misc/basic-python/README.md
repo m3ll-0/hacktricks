@@ -252,9 +252,9 @@ re.findall\("\w+\(la\)","hola caracola"\) = \['la', 'la'\]
 ^ --&gt; Starts with  
 $ --&gt; Ends with
 
-* --&gt; One or more  
+* --&gt; One or more
 
-  \* --&gt; 0 or more  
+  \* --&gt; 0 or more
 
   ? --&gt; 0 or 1 occurrences
 

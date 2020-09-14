@@ -1360,10 +1360,10 @@ If you manages to **hijack a dll** being **loaded** by a **process** running as 
 
 #### Exe
 
-[**Watson**](https://github.com/rasta-mouse/Watson) **\*\*-- Search for known privesc vulnerabilities \(needs to be compiled using VisualStudio\) \(\[**precompiled**\]\(**[https://github.com/carlospolop/winPE/tree/master/binaries/watson\)\](https://github.com/carlospolop/winPE/tree/master/binaries/watson%29\)**\)  
-\[**SeatBelt**\]\(**[https://github.com/GhostPack/Seatbelt](https://github.com/GhostPack/Seatbelt)**\) \*\***-- Enumerates the host searching for misconfigurations \(more a gather info tool than privesc\) \(needs to be compiled\) **\(**[**precompiled**](https://github.com/carlospolop/winPE/tree/master/binaries/seatbelt)**\)**  
-[**LaZagne**](https://github.com/AlessandroZ/LaZagne) **\*\*-- Extracts credentials from lots of softwares \(precompiled exe in github\)  
-\[~~**Beroot**~~\]\(**[https://github.com/AlessandroZ/BeRoot](https://github.com/AlessandroZ/BeRoot)**\) ~~\*\***~~-- Check for misconfiguration \(executable precompiled in github\). Not recommended. It does not work well in Win10.  
+[**Watson**](https://github.com/rasta-mouse/Watson) **\*\*-- Search for known privesc vulnerabilities \(needs to be compiled using VisualStudio\) \(\[**precompiled**\]\(**[https://github.com/carlospolop/winPE/tree/master/binaries/watson\)\](https://github.com/carlospolop/winPE/tree/master/binaries/watson%29%29**\)  
+\[**SeatBelt**\]\([**https://github.com/GhostPack/Seatbelt**](https://github.com/GhostPack/Seatbelt)\) \*\***-- Enumerates the host searching for misconfigurations \(more a gather info tool than privesc\) \(needs to be compiled\)** \(**\[**precompiled**\]\(**[https://github.com/carlospolop/winPE/tree/master/binaries/seatbelt](https://github.com/carlospolop/winPE/tree/master/binaries/seatbelt)**\)**\)  
+**\[**LaZagne**\]\(**[https://github.com/AlessandroZ/LaZagne](https://github.com/AlessandroZ/LaZagne)**\)** \*\*-- Extracts credentials from lots of softwares \(precompiled exe in github\)  
+\[~~**Beroot**~~\]\([**https://github.com/AlessandroZ/BeRoot**](https://github.com/AlessandroZ/BeRoot)\) ~~\*\*\*\*~~-- Check for misconfiguration \(executable precompiled in github\). Not recommended. It does not work well in Win10.  
 \[~~**Windows-Privesc-Check**~~\]\([https://github.com/pentestmonkey/windows-privesc-check](https://github.com/pentestmonkey/windows-privesc-check)\) -- Check for possible misconfigurations \(exe from python\). Not recommended. It does not work well in Win10.
 
 #### Bat

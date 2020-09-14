@@ -39,7 +39,7 @@ To learn how to **attack an AD** you need to **understand** really good the **Ke
 
 If you just have access to an AD environment but you don't have any credentials/sessions you could:
 
-* **Pentest the network:** Scan the network, find machines and open ports and try to **exploit vulnerabilities** or **extract credentials** from them \(for example, **\*\*\[**printers could be very interesting targets**\]\(ad-information-in-printers.md\)\). Take a look to the General \*\***[**Pentesting Methodology**](../../pentesting-methodology.md) _\*\*_to find more information about how to do this.
+* **Pentest the network:** Scan the network, find machines and open ports and try to **exploit vulnerabilities** or **extract credentials** from them \(for example, **\*\*\[**printers could be very interesting targets**\]\(ad-information-in-printers.md\)\). Take a look to the General \*\***[**Pentesting Methodology**](../../pentesting-methodology.md) \_\*\*\_to find more information about how to do this.
 * **Check for null and Guest access on smb services** \(this won't work on modern Windows versions\):
   * `enum4linux -a -u "" -p "" <DC IP> && enum4linux -a -u "guest" -p "" <DC IP>`
   * `smbmap -u "" -p "" -P 445 -H <DC IP> && smbmap -u "guest" -p "" -P 445 -H <DC IP>`
@@ -394,7 +394,5 @@ If you don't execute this from a Domain Controller, ATA is going to catch you, s
 * [Python script to enumerate active directory](https://github.com/ropnop/windapsearch)
 * [Python script to enumerate active directory](https://github.com/CroweCybersecurity/ad-ldap-enum)
 
-![](../../.gitbook/assets/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f6f72616e67655f696d672e706e67%20%282%29.png)
 
-​[**Buy me a coffee here**](https://www.buymeacoffee.com/carlospolop)\*\*\*\*
 

@@ -91,11 +91,11 @@ description: Checklist for privilege escalation in Linux
 * [ ] \*\*\*\*[**Sudo/SUID binary without path indicated**](privilege-escalation/#sudo-command-suid-binary-without-command-path)?
 * [ ] \*\*\*\*[**SUID binary specifying path**](privilege-escalation/#suid-binary-with-command-path)? Bypass
 * [ ] \*\*\*\*[**LD\_PRELOAD vuln**](privilege-escalation/#ld_preload)\*\*\*\*
-* [ ] \*\*\*\*[**Lack of .so library in SUID binary**](privilege-escalation/#suid-binary-so-injection) _\*\*_from a writable folder?
+* [ ] \*\*\*\*[**Lack of .so library in SUID binary**](privilege-escalation/#suid-binary-so-injection) \_\*\*\_from a writable folder?
 * [ ] \*\*\*\*[**SUDO tokens available**](privilege-escalation/#reusing-sudo-tokens)? [**Can you create a SUDO token**](privilege-escalation/#var-run-sudo-ts-less-than-username-greater-than)?
 * [ ] Can you [**read or modify sudoers files**](privilege-escalation/#etc-sudoers-etc-sudoers-d)?
 * [ ] Can you [**modify /etc/ld.so.conf.d/**](privilege-escalation/#etc-ld-so-conf-d)?
-* [ ] [**OpenBSD DOAS**](privilege-escalation/#doas) _\*\*_command
+* [ ] [**OpenBSD DOAS**](privilege-escalation/#doas) \_\*\*\_command
 
 ## [Capabilities](privilege-escalation/#capabilities)
 
@@ -141,12 +141,4 @@ description: Checklist for privilege escalation in Linux
 
 * [ ] Can you [**abuse NFS to escalate privileges**](privilege-escalation/#nfs-privilege-escalation)?
 * [ ] Do you need to [**escape from a restrictive shell**](privilege-escalation/#escaping-from-restricted-shells)?
-
-If you want to **know** about my **latest modifications**/**additions or you have any suggestion for HackTricks or PEASS**, **join the** [**PEASS & HackTricks telegram group here**](https://t.me/peass)**.**  
-If you want to **share some tricks with the community** you can also submit **pull requests** to **\*\*\[**[https://github.com/carlospolop/hacktricks\*\*\]\(https://github.com/carlospolop/hacktricks](https://github.com/carlospolop/hacktricks**]%28https://github.com/carlospolop/hacktricks)\) **\*\*that will be reflected in this book.  
-Don't forget to** give ⭐ on the github\*\* to motivate me to continue developing this book.
-
-![](../.gitbook/assets/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f6f72616e67655f696d672e706e67%20%284%29.png)
-
-​[**Buy me a coffee here**](https://www.buymeacoffee.com/carlospolop)\*\*\*\*
 

@@ -123,7 +123,7 @@ Trust Ticket Specific Required Parameters:
 #### **More KERBEROS**
 
 **KERBEROS::List** – List all user tickets \(TGT and TGS\) in user memory. No special privileges required since it only displays the current user’s tickets.  
-_\*\*_Similar to functionality of “klist”.
+\_\*\*\_Similar to functionality of “klist”.
 
 **KERBEROS::PTC** – pass the cache \(NT6\)  
 \*Nix systems like Mac OS, Linux,BSD, Unix, etc cache Kerberos credentials. This cached data can be copied off and passed using Mimikatz. Also useful for injecting Kerberos tickets in ccache files.
