@@ -29,8 +29,6 @@ Linux:
 pypykatz lsa minidump lsass.DMP
 ```
 
-### 
-
 ### Invoke-Mimikatz
 
 ```bash
