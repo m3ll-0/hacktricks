@@ -29,7 +29,7 @@ RPCUserInfoSprayer.sh <target> <userfile> <new_password> <auth_username> <auth_p
 RPCUserInfoSprayer.sh $target /tmp/testusers HelloWorld1 support '#00^BlackKnight'
 ```
 
-This tries to change the user passwords using RPCClient, this won't likely lock out the accounts \(not confirmed\). For more information read: [https://malicious.link/post/2017/reset-ad-user-password-with-linux/](https://malicious.link/post/2017/reset-ad-user-password-with-linux/)
+Helpdesk / Service accounts may have the option to reset user passwords. This tries to change the user passwords using RPCClient, this won't likely lock out the accounts \(not confirmed\). For more information read: [https://malicious.link/post/2017/reset-ad-user-password-with-linux/](https://malicious.link/post/2017/reset-ad-user-password-with-linux/)
 
 Using **crackmapexec:**
 
