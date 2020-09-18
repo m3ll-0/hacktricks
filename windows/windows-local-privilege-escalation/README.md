@@ -1,10 +1,6 @@
 # Windows Local Privilege Escalation
 
-### **Best tool to look for Windows local privilege escalation vectors:** [**WinPEAS**](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)\*\*\*\*
-
-If you want to **know** about my **latest modifications**/**additions**, **join the** [**PEASS & HackTricks telegram group here**](https://t.me/peass)**.**  
-If you want to **share some tricks with the community** you can also submit **pull requests** to **\*\*\[**[https://github.com/carlospolop/hacktricks\*\*\]\(https://github.com/carlospolop/hacktricks](https://github.com/carlospolop/hacktricks**]%28https://github.com/carlospolop/hacktricks)\) **\*\*that will be reflected in this book.  
-Don't forget to** give ⭐ on the github\*\* to motivate me to continue developing this book.
+### **Other extensive sources:** [**https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet**](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet)\*\*\*\*
 
 ## Initial Windows Theory
 

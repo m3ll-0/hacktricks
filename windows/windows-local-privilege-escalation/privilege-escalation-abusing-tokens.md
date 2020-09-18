@@ -105,8 +105,9 @@ Full token privileges cheatsheet at [https://github.com/gtworek/Priv2Admin](http
       <td style="text-align:left">- May be more interesting if you can read %WINDIR%\MEMORY.DMP
         <br />
         <br />- <code>SeBackupPrivilege</code> (and robocopy) is not helpful when it comes
-        to open files.
-        <br />
+        to open files. Full guide: <a href="https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet">https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet</a>
+        <br
+        />
         <br />- Robocopy requires both SeBackup and SeRestore to work with /b parameter.</td>
     </tr>
     <tr>
